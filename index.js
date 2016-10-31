@@ -6,7 +6,6 @@
 var Linter = require("tslint");
 var tslintConfig = require("tslint/lib/configuration");
 var stripJsonComments = require("strip-json-comments");
-var loaderUtils = require("loader-utils");
 var fs = require("fs");
 var path = require("path");
 var typescript = require("typescript");
@@ -34,8 +33,7 @@ function lint(input, options) {
   var bailEnabled = (this.options.bail === true);
 
   //Override options in tslint.json by those passed to the loader as a query string
-  var query = loaderUtils.parseQuery(this.query);
-  objectAssign(options, query);   
+  objectAssign(options, this.query || {});   
   
   var linter = new Linter(this.resourcePath, input, options);
   var result = linter.lint();

@@ -1,33 +1,32 @@
 {
-  "name": "tslint-loader",
-  "version": "2.1.5",
-  "description": "tslint loader for webpack",
+  "name": "tslint-loader-2",
+  "version": "2.0.0",
+  "description": "tslint loader for webpack 2",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/wbuchwalter/tslint-loader"
+    "url": "https://github.com/mindlink/tslint-loader-2"
   },
   "keywords": [
     "tslint",
     "typescript",
-    "webpack",
+    "webpack 2",
     "loader",
     "linting"
   ],
-  "author": "William Buchwalter",
+  "author": "MindLink Software",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/wbuchwalter/tslint-loader/issues"
+    "url": "https://github.com/mindlink/tslint-loader-2/issues"
   },
-  "homepage": "https://github.com/wbuchwalter/tslint-loader",
+  "homepage": "https://github.com/mindlink/tslint-loader-2",
   "peerDependencies": {
     "tslint": "^3.0.0"
   },
   "dependencies": {
-    "loader-utils": "^0.2.7",
     "mkdirp": "^0.5.1",
     "object-assign": "^4.0.1",
     "rimraf": "^2.4.4",
